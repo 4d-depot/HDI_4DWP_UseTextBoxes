@@ -22,12 +22,12 @@ Case of
 		$options:=New object:C1471
 		
 		$options.title:=""
-		$options.title:=$options.title+"manage ORDA data inside 4D Write Pro documents?"  //+"\n"
+		$options.title:=$options.title+"insert text boxes inside 4D Write Pro documents?"  //+"\n"
 		
 		$options.blog:="blog.4d.com"
 		$options.info:="4D Write Pro feature"  //ex : "4D View Pro feature"
 		
-		$options.minimumVersion:="1950"  // 1950 means 19R5   1701 means 17.1 (do not use !)
+		$options.minimumVersion:="1980"  // 1980 means 19R8   1908 means 19.8 (do not use !)
 		
 		$options.license:=4D Write license:K44:2  // IF ANY NEEDED
 		

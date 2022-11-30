@@ -72,7 +72,7 @@
 				"btnTrace": {
 					"type": "checkbox",
 					"text": "Trace code",
-					"top": 800,
+					"top": 790,
 					"left": 1030,
 					"width": 120,
 					"height": 20,
@@ -97,7 +97,7 @@
 				},
 				"WParea1": {
 					"type": "write",
-					"top": 80,
+					"top": 70,
 					"left": 60,
 					"width": 1070,
 					"height": 160,
@@ -118,10 +118,10 @@
 				},
 				"WPmailing": {
 					"type": "write",
-					"top": 260,
+					"top": 250,
 					"left": 60,
 					"width": 780,
-					"height": 520,
+					"height": 500,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "WParea2",
@@ -140,9 +140,9 @@
 				"LB": {
 					"type": "listbox",
 					"left": 860,
-					"top": 260,
+					"top": 250,
 					"width": 270,
-					"height": 520,
+					"height": 500,
 					"events": [
 						"onSelectionChange"
 					],
@@ -185,8 +185,8 @@
 				},
 				"btnHTML1": {
 					"type": "button",
-					"top": 800,
-					"left": 60,
+					"top": 790,
+					"left": 540,
 					"width": 140,
 					"height": 20,
 					"sizingY": "move",
@@ -195,12 +195,13 @@
 					"method": "ObjectMethods/btnHTML1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"btnPDF1": {
 					"type": "button",
-					"top": 800,
-					"left": 210,
+					"top": 790,
+					"left": 700,
 					"width": 140,
 					"height": 20,
 					"sizingY": "move",
@@ -209,16 +210,84 @@
 					"method": "ObjectMethods/btnPDF1.4dm",
 					"events": [
 						"onClick"
+					],
+					"sizingX": "move"
+				},
+				"btnHTML": {
+					"type": "button",
+					"top": 770,
+					"left": 190,
+					"width": 120,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Export to HTML",
+					"focusable": false,
+					"method": "ObjectMethods/btnHTML.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnPDF": {
+					"type": "button",
+					"top": 770,
+					"left": 60,
+					"width": 120,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Export to PDF",
+					"focusable": false,
+					"method": "ObjectMethods/btnPDF.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnSVG": {
+					"type": "button",
+					"top": 800,
+					"left": 60,
+					"width": 120,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Export to SVG",
+					"focusable": false,
+					"method": "ObjectMethods/btnSVG.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnDOCX": {
+					"type": "button",
+					"top": 800,
+					"left": 190,
+					"width": 120,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Export to Docx",
+					"focusable": false,
+					"method": "ObjectMethods/btnDOCX.4dm",
+					"events": [
+						"onClick"
 					]
 				}
 			}
 		},
 		{
 			"objects": {
+				"Static Picture2": {
+					"type": "picture",
+					"top": 785,
+					"left": 244,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/new.png",
+					"pictureFormat": "scaled",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
 				"btnTrace1": {
 					"type": "checkbox",
 					"text": "Trace code",
-					"top": 800,
+					"top": 790,
 					"left": 1030,
 					"width": 120,
 					"height": 20,
@@ -231,19 +300,9 @@
 					"enterable": true,
 					"focusable": false
 				},
-				"Static Picture2": {
-					"type": "picture",
-					"top": 954,
-					"left": 995,
-					"width": 50,
-					"height": 50,
-					"picture": "/RESOURCES/Images/new.png",
-					"pictureFormat": "scaled",
-					"sizingX": "move"
-				},
 				"WParea3": {
 					"type": "write",
-					"top": 80,
+					"top": 70,
 					"left": 60,
 					"width": 1070,
 					"height": 160,
@@ -264,7 +323,7 @@
 				},
 				"WPmailing1": {
 					"type": "write",
-					"top": 260,
+					"top": 250,
 					"left": 60,
 					"width": 780,
 					"height": 520,
@@ -286,7 +345,7 @@
 				"LB1": {
 					"type": "listbox",
 					"left": 860,
-					"top": 260,
+					"top": 250,
 					"width": 270,
 					"height": 520,
 					"events": [
@@ -329,38 +388,10 @@
 						}
 					]
 				},
-				"btnHTML2": {
-					"type": "button",
-					"top": 800,
-					"left": 60,
-					"width": 140,
-					"height": 20,
-					"sizingY": "move",
-					"text": "Display values",
-					"focusable": false,
-					"method": "ObjectMethods/btnHTML2.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnPDF3": {
-					"type": "button",
-					"top": 800,
-					"left": 210,
-					"width": 140,
-					"height": 20,
-					"sizingY": "move",
-					"text": "Display formulas",
-					"focusable": false,
-					"method": "ObjectMethods/btnPDF3.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"btnPDF4": {
 					"type": "button",
-					"top": 800,
-					"left": 670,
+					"top": 790,
+					"left": 60,
 					"width": 170,
 					"height": 20,
 					"sizingY": "move",
@@ -370,8 +401,54 @@
 					"events": [
 						"onClick"
 					],
-					"sizingX": "move",
+					"sizingX": "fixed",
 					"fontWeight": "bold"
+				},
+				"btnPDF2": {
+					"type": "button",
+					"top": 790,
+					"left": 290,
+					"width": 170,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Get textbox info",
+					"focusable": false,
+					"method": "ObjectMethods/btnPDF2.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"fontWeight": "bold"
+				},
+				"btnHTML3": {
+					"type": "button",
+					"top": 790,
+					"left": 540,
+					"width": 140,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Display values",
+					"focusable": false,
+					"method": "ObjectMethods/btnHTML3.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move"
+				},
+				"btnPDF5": {
+					"type": "button",
+					"top": 790,
+					"left": 700,
+					"width": 140,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Display formulas",
+					"focusable": false,
+					"method": "ObjectMethods/btnPDF5.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move"
 				}
 			}
 		}
@@ -380,7 +457,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4004,
+	"geometryStamp": 4134,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

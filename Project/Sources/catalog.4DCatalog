@@ -61,9 +61,9 @@
 		</field>
 		<primary_key field_name="ID" field_uuid="FF2FCA7F712E44B39AC199EA8D20EB47"/>
 		<table_extra output_form="list">
-			<editor_table_info fields_ordering="2" displayable_fields_count="12">
+			<editor_table_info fields_ordering="2" displayable_fields_count="10">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="635.97265625" top="0" width="120" height="296.1484375"/>
+				<coordinates left="635.97265625" top="0" width="120" height="253.31970214844"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
