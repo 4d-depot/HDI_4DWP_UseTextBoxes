@@ -4,8 +4,29 @@ If (Form:C1466.trace)
 	TRACE:C157
 End if 
 
+var $window : Integer
+var $form : Object
 
-// #1 create the the text box
+$form:=New object:C1471
+$form.offsetX:=New object:C1471("values"; New collection:C1472("6cm"; "7cm"; "8cm"; "9cm"); "index"; 0)
+$form.offsetY:=New object:C1471("values"; New collection:C1472("3cm"; "4cm"; "5cm"; "5cm"); "index"; 0)
+
+$form.width:=New object:C1471("values"; New collection:C1472("8cm"; "8.5cm"; "9cm"; "9.5cm"; "10cm"); "index"; 0)
+$form.height:=New object:C1471("values"; New collection:C1472("3cm"; "3.5cm"; "4cm"; "4.5cm"); "index"; 0)
+
+$window:=Open form window:C675("D_Sizes")
+DIALOG:C40("D_Sizes"; $form)
+
+
+
+// {#0 check for an existing text box}
+$textBox:=WP Get element by ID:C1549(WParea2; "AddressArea")
+If ($textBox#Null:C1517)
+	WP DELETE TEXT BOX:C1798($textBox)
+End if 
+
+
+// #1 create the text box
 $textBox:=WP New text box:C1797(WParea2; 1)
 
 
@@ -14,9 +35,12 @@ WP SET ATTRIBUTES:C1342($textBox; wk id:K81:193; "AddressArea")
 WP SET ATTRIBUTES:C1342($textBox; wk anchor origin:K81:235; wk paper box:K81:215)
 WP SET ATTRIBUTES:C1342($textBox; wk anchor horizontal align:K81:237; wk left:K81:95; wk vertical align:K81:9; wk top:K81:97)
 
-WP SET ATTRIBUTES:C1342($textBox; wk anchor horizontal offset:K81:236; "8cm"; wk anchor vertical offset:K81:238; "4.5cm")
+WP SET ATTRIBUTES:C1342($textBox; wk anchor horizontal offset:K81:236; $form.offsetX.values[$form.offsetX.index])
+WP SET ATTRIBUTES:C1342($textBox; wk anchor vertical offset:K81:238; $form.offsetY.values[$form.offsetY.index])
+WP SET ATTRIBUTES:C1342($textBox; wk width:K81:45; $form.width.values[$form.width.index])
+WP SET ATTRIBUTES:C1342($textBox; wk height:K81:46; $form.height.values[$form.height.index])
+
 WP SET ATTRIBUTES:C1342($textBox; wk padding:K81:15; "0.5cm")  // inside margins
-WP SET ATTRIBUTES:C1342($textBox; wk width:K81:45; "10cm"; wk height:K81:46; "3.5cm")
 
 WP SET ATTRIBUTES:C1342($textBox; wk border style:K81:29; wk dashed:K81:117; wk border color:K81:34; "Blue"; wk border width:K81:39; "1pt"; wk border radius:K81:44; "10pt")
 WP SET ATTRIBUTES:C1342($textBox; wk vertical align:K81:9; wk center:K81:99)

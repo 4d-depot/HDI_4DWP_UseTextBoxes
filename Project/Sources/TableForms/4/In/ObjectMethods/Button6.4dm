@@ -1,8 +1,8 @@
-$sel:=WP Selection range:C1340([Templates:4]wp:3)
+//$sel:=WP Selection range([Templates]wp)
 
-If (Not:C34(Undefined:C82($sel.container))) && ($sel.container.type=300)
-	WP SET ATTRIBUTES:C1342($sel.container; wk border radius:K81:44; Form:C1466.radius; wk border style:K81:29; Form:C1466.style; wk border width:K81:39; Form:C1466.width; wk margin:K81:10; Form:C1466.margin; wk padding:K81:15; Form:C1466.padding)
-End if 
+//If (Not(Undefined($sel.container))) && ($sel.container.type=300)
+//WP SET ATTRIBUTES($sel.container; wk border radius; Form.radius; wk border style; Form.style; wk border width; Form.width; wk margin; Form.margin; wk padding; Form.padding)
+//End if 
 
 
 

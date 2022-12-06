@@ -1,7 +1,9 @@
+
 Class extends EntitySelection
 
 Function mailing($template : Object)
 	
+	var $people : Object
 	SET PRINT PREVIEW:C364(True:C214)
 	
 	For each ($people; This:C1470)
