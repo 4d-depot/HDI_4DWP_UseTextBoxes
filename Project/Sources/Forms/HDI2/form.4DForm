@@ -72,7 +72,7 @@
 				"btnTrace": {
 					"type": "checkbox",
 					"text": "Trace code",
-					"top": 790,
+					"top": 800,
 					"left": 1030,
 					"width": 120,
 					"height": 20,
@@ -118,10 +118,10 @@
 				},
 				"WPmailing": {
 					"type": "write",
-					"top": 250,
+					"top": 260,
 					"left": 60,
 					"width": 780,
-					"height": 500,
+					"height": 520,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "WParea2",
@@ -140,9 +140,9 @@
 				"LB": {
 					"type": "listbox",
 					"left": 860,
-					"top": 250,
+					"top": 260,
 					"width": 270,
-					"height": 500,
+					"height": 520,
 					"events": [
 						"onSelectionChange"
 					],
@@ -185,8 +185,8 @@
 				},
 				"btnHTML1": {
 					"type": "button",
-					"top": 790,
-					"left": 540,
+					"top": 800,
+					"left": 550,
 					"width": 140,
 					"height": 20,
 					"sizingY": "move",
@@ -200,7 +200,7 @@
 				},
 				"btnPDF1": {
 					"type": "button",
-					"top": 790,
+					"top": 800,
 					"left": 700,
 					"width": 140,
 					"height": 20,
@@ -215,8 +215,8 @@
 				},
 				"btnHTML": {
 					"type": "button",
-					"top": 770,
-					"left": 190,
+					"top": 800,
+					"left": 320,
 					"width": 120,
 					"height": 20,
 					"sizingY": "move",
@@ -229,7 +229,7 @@
 				},
 				"btnPDF": {
 					"type": "button",
-					"top": 770,
+					"top": 800,
 					"left": 60,
 					"width": 120,
 					"height": 20,
@@ -244,7 +244,7 @@
 				"btnSVG": {
 					"type": "button",
 					"top": 800,
-					"left": 60,
+					"left": 190,
 					"width": 120,
 					"height": 20,
 					"sizingY": "move",
@@ -257,7 +257,7 @@
 				},
 				"btnDOCX": {
 					"type": "button",
-					"top": 800,
+					"top": 940,
 					"left": 190,
 					"width": 120,
 					"height": 20,
@@ -275,8 +275,8 @@
 			"objects": {
 				"Static Picture2": {
 					"type": "picture",
-					"top": 785,
-					"left": 244,
+					"top": 796,
+					"left": 25,
 					"width": 32,
 					"height": 32,
 					"picture": "/RESOURCES/Images/new.png",
@@ -287,7 +287,7 @@
 				"btnTrace1": {
 					"type": "checkbox",
 					"text": "Trace code",
-					"top": 790,
+					"top": 800,
 					"left": 1030,
 					"width": 120,
 					"height": 20,
@@ -323,7 +323,7 @@
 				},
 				"WPmailing1": {
 					"type": "write",
-					"top": 250,
+					"top": 260,
 					"left": 60,
 					"width": 780,
 					"height": 520,
@@ -336,8 +336,6 @@
 					"scrollbarVertical": "automatic",
 					"scrollbarHorizontal": "automatic",
 					"showSelection": true,
-					"showHorizontalRuler": false,
-					"showVerticalRuler": false,
 					"layoutMode": "page",
 					"borderStyle": "none",
 					"events": []
@@ -345,7 +343,7 @@
 				"LB1": {
 					"type": "listbox",
 					"left": 860,
-					"top": 250,
+					"top": 260,
 					"width": 270,
 					"height": 520,
 					"events": [
@@ -390,40 +388,38 @@
 				},
 				"btnPDF4": {
 					"type": "button",
-					"top": 790,
+					"top": 800,
 					"left": 60,
 					"width": 170,
 					"height": 20,
 					"sizingY": "move",
-					"text": "Build address area",
+					"text": "New text box…",
 					"focusable": false,
 					"method": "ObjectMethods/btnPDF4.4dm",
 					"events": [
 						"onClick"
 					],
-					"sizingX": "fixed",
-					"fontWeight": "bold"
+					"sizingX": "fixed"
 				},
 				"btnPDF2": {
 					"type": "button",
-					"top": 790,
-					"left": 290,
+					"top": 800,
+					"left": 240,
 					"width": 170,
 					"height": 20,
 					"sizingY": "move",
-					"text": "Get textbox info",
+					"text": "Get text box info",
 					"focusable": false,
 					"method": "ObjectMethods/btnPDF2.4dm",
 					"events": [
 						"onClick"
 					],
-					"sizingX": "fixed",
-					"fontWeight": "bold"
+					"sizingX": "fixed"
 				},
 				"btnHTML3": {
 					"type": "button",
-					"top": 790,
-					"left": 540,
+					"top": 800,
+					"left": 550,
 					"width": 140,
 					"height": 20,
 					"sizingY": "move",
@@ -437,7 +433,7 @@
 				},
 				"btnPDF5": {
 					"type": "button",
-					"top": 790,
+					"top": 800,
 					"left": 700,
 					"width": 140,
 					"height": 20,
@@ -457,7 +453,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4134,
+	"geometryStamp": 4252,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

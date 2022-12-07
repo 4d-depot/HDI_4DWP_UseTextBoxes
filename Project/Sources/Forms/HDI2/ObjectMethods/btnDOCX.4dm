@@ -1,3 +1,5 @@
+// text boxes are NOT exported to docx (yet)
+
 C_TEXT:C284($Path)
 
 $Path:=Get 4D folder:C485(Data folder:K5:33)+"export.docx"
