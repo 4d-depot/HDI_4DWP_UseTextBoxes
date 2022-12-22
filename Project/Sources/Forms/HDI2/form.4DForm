@@ -121,7 +121,7 @@
 					"top": 260,
 					"left": 60,
 					"width": 780,
-					"height": 520,
+					"height": 500,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "WParea2",
@@ -183,44 +183,14 @@
 						}
 					]
 				},
-				"btnHTML1": {
-					"type": "button",
-					"top": 800,
-					"left": 550,
-					"width": 140,
-					"height": 20,
-					"sizingY": "move",
-					"text": "Display values",
-					"focusable": false,
-					"method": "ObjectMethods/btnHTML1.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "move"
-				},
-				"btnPDF1": {
-					"type": "button",
-					"top": 800,
-					"left": 700,
-					"width": 140,
-					"height": 20,
-					"sizingY": "move",
-					"text": "Display formulas",
-					"focusable": false,
-					"method": "ObjectMethods/btnPDF1.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "move"
-				},
 				"btnHTML": {
 					"type": "button",
 					"top": 800,
 					"left": 320,
-					"width": 120,
+					"width": 140,
 					"height": 20,
 					"sizingY": "move",
-					"text": "Export to HTML",
+					"text": "Export to HTML…",
 					"focusable": false,
 					"method": "ObjectMethods/btnHTML.4dm",
 					"events": [
@@ -257,8 +227,8 @@
 				},
 				"btnDOCX": {
 					"type": "button",
-					"top": 940,
-					"left": 190,
+					"top": 923,
+					"left": 396,
 					"width": 120,
 					"height": 20,
 					"sizingY": "move",
@@ -268,6 +238,62 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Radio Button": {
+					"type": "radio",
+					"text": "Display formulas",
+					"top": 784,
+					"left": 680,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.displayFormulas",
+					"method": "ObjectMethods/Radio Button.4dm",
+					"radioGroup": "GR_formulas"
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"text": "Display values",
+					"top": 804,
+					"left": 680,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.displayValues",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"radioGroup": "GR_formulas"
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"text": "Page mode",
+					"top": 784,
+					"left": 500,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.modePage",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"radioGroup": "GR_pageMode"
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"text": "Embedded mode",
+					"top": 804,
+					"left": 500,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.modeEmbedded",
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"radioGroup": "GR_pageMode"
 				}
 			}
 		},
@@ -453,7 +479,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4252,
+	"geometryStamp": 4338,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

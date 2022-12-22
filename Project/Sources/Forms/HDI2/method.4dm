@@ -17,7 +17,11 @@ Case of
 		
 		WP SET VIEW PROPERTIES:C1648(WParea2; New object:C1471(wk formula highlight:K81:350; wk never:K81:352; wk formula highlight color:K81:351; "Yellow"; wk visible references:K81:286; False:C215))
 		
+		Form:C1466.displayValues:=True:C214
+		Form:C1466.modePage:=True:C214
+		
 		Form:C1466.trace:=False:C215
+		
 		
 		
 	: (Form event code:C388=On Timer:K2:25)
